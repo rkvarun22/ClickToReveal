@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "sans-serif";
+  font-size: 10px;
+  padding: 0;
+  color: #fff;
+}
+
+#fluid-container {
+  background: url("./mcq/mcq_bg1.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding: 4rem 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fluid {
+  justify-content: center !important;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.score-btn,
+.refresh-btn {
+  color: #fff;
+  border: 2px solid rgba(233, 171, 90, 0.25);
+  border-radius: 2rem;
+  outline: none;
+  font-size: 2.5rem;
+  padding: 3rem;
+  width: fit-content;
+}
+
+.score-btn {
+  background-color: rgba(200, 69, 69);
+}
+
+.refresh-btn {
+  background-color: rgba(233, 171, 90);
+  cursor: pointer;
+}
+
+#question {
+  font-size: 2.5rem;
+  word-wrap: break-word;
+}
+
+.label {
+  padding: 2rem 0 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.label .choose-answer {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.form-control {
+  padding: 1rem 0 0 1rem;
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+#question-submit-next-box {
+  border: 2px solid #ccc;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  background-color: rgba(165, 42, 42, 0.607);
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  display: grid;
+  place-items: center;
+}
+
+.logo img {
+  width: 4rem;
+}
+
+#question-numbers {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+#question-numbers .index {
+  background-color: rgba(165, 42, 42, 0.607);
+  border-color: rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  font-size: 2rem;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.index:hover {
+  color: rgba(200, 69, 69);
+}
+
+.active-question {
+  outline: 2px solid rgba(255, 255, 255, 0.6);
+  outline-offset: 0.5rem;
+}
+
+#submit {
+  padding: 1rem 4rem;
+  background-color: #ccc;
+  color: #000;
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.stars-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.stars-container img {
+  width: 3rem;
+  height: 3rem;
+}
